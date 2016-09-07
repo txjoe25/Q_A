@@ -1,0 +1,17 @@
+<!-- keeep track of messages -->
+<p ng-bind="message"></p>
+
+<div ng-if="user._id">
+  <!-- if a user session/exists then allow to proceed/see session info or logout -->
+    <button ng-click="logout()">Yes</button>
+  <button ng-click="proceed()">No</button>
+
+</div>
+
+<!-- if no session/user exists, than allow to create -->
+<div ng-if="!user._id">
+	<h1>Q&A</h1>
+  Name: <input type="text" ng-model="person.name">
+  
+  <button ng-click="create(person)">Enter</button>
+</div>

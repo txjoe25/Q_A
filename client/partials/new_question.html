@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Question</title>
+</head>
+<body>
+    <a href="/#/dashboard">Home</a>
+    <a href="/#/users">Logout</a>
+<h1>New Question</h1>
+<form name='form' ng-submit = 'create()'>
+	Title: <input type="text" name="title" ng-model="topic.title" required minlength="10"><span ng-show='form.topic.title.$invalid'>needs to be 10 characters</span><br>
+	Description: <input type="textarea" name="description" ng-model="topic.description"><br>
+<button>Submit</button>
+</form>
+<button href="/#/dashboard">Cancel</button>
+</body>
+</html>

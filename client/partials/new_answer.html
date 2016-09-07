@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Answer</title>
+</head>
+<body>
+    <a href="/#/dashboard">Home</a>
+    <a href="/#/users">Logout</a>
+	<h1>{{survey.title}}</h1>
+	<h2>{{survey.description}}</h2>
+<form name='form' ng-submit = 'addAnswer(newAnswer)'>
+Your Answer: <input type="textarea" ng-model="newAnswer.response" required minlength="5"/><br>
+Supporting details for your answer(optional)<input type="textarea" ng-model="newAnswer.description">
+	<button>Answer</button>
+</form>
+
+</body>
+</html>

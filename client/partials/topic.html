@@ -1,0 +1,12 @@
+    <a href="/#/dashboard">Home</a>
+    <a href="/#/users">Logout</a>
+<div>
+	<a href="/#/new_answer/{{survey._id}}">Answer this question</a>
+	<h1>{{survey.title}}</h1>
+	<h2>{{survey.description}}</h2>
+
+	<div ng-repeat="answer in survey._answers">
+		<p>Name:{{answer._user.name}}
+		<p>Response:{{answer.response}}</p>
+		<p>{{answer.upvote}}<button ng-click="upvote(answer._id)">Like</button></p>
+</div>

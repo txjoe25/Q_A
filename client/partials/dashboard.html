@@ -1,0 +1,25 @@
+    <a href="/#/users">Logout</a>
+<h1> Hi, {{user.name}}</h1>
+<a href="/#/new_question">Add a Question</a>
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>Question</th>
+        <th>Answers</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+      <tr ng-repeat="survey in surveys">
+        <td>{{survey.title}}</a></td>
+        <!-- <td>{{survey._user.name}}</td>
+        <td>{{survey.category}}</td> -->
+        <td>{{survey._answers.length}}</td>
+        <td><a href="/#/surveys/{{survey._id}}">Show</a><span>  </span><a href="/#/new_answer/{{survey._id}}">Answer</a></td>
+        <td><button ng-click='deleteTopic(survey._id)'>Delete</button></td>
+      </tr>
+    <tbody>
+    </tbody>
+  </table>
+
+</div>
