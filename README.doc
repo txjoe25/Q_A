@@ -1,0 +1,7 @@
+Required Features
+♦ Create and deploy in under 4.5 hours
+♦ Index page shows all questions with a show and delete button, as well as a count for number of answers associated with each question.
+♦ Show page displays a single question and has a link to answer that same question.
+♦ Answering a question must have validations to submit the answer
+♦ Creating a question must contain a title and description
+♦ Login/Logout feature.
